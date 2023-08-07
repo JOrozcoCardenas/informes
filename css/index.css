@@ -1,0 +1,84 @@
+#tabla .body .fil1 .col1,
+#tabla .body .fil2 .col1,
+#tabla .body .fil3 .col1,
+#tabla .body .fil4 .col1,
+#tabla .body .fil5 .col1 {
+  flex-basis: 50%;
+  text-align: left;
+  padding-right: 5px;
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+
+#tabla .body .fil1 .col2,
+#tabla .body .fil2 .col2,
+#tabla .body .fil3 .col2,
+#tabla .body .fil4 .col2,
+#tabla .body .fil5 .col2 {
+  flex-basis: 50%;
+  text-align: center;
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+      body {
+        font-family: Arial, sans-serif;
+      }
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="date"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        /*border: 1px solid #ccc;*/
+        border: 1px solid rgba(181, 216, 197, 0.5);
+      }
+      #tabla {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      #tabla .body .fil0 .th {
+        text-align: right;
+      }
+
+      #tabla .body .fil1,
+      #tabla .body .fil2,
+      #tabla .body .fil3,
+      #tabla .body .fil4,
+      #tabla .body .fil5 {
+        display: flex;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+      }
+      
+      input[type="submit"]:hover {
+        
+        background-color: #5dca62;
+        color: rgb(42, 66, 50);
+      }
+      textarea{
+        width: 355px; 
+        height: 73px
+      }
+      

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">     
+  <head>
+    <meta charset="utf-8">
+    <meta content="text/javascript">
+    <meta content="text/css">
+    <meta content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/javascript" href="./js/selector.js">
+    <title> Informe de Servicio</title>
+    <script src="./js/selector.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          updateSelect();
+      });
+    </script>
+         
+    
+  </head>
+  <body>
+    <form>
+      <label for="name">Nombre:</label>
+      <select name="name" id="name">
+        <option value="nombre1">Nombre 1</option>
+        <option value="nombre2">Nombre 2</option>
+        <option value="nombre3">Nombre 3</option>
+      </select>
+
+      <br>
+      <label for="date">Fecha: <input type="date" id="date" name="date"></label>
+      
+      <br><br>
+
+      <div id="tabla">
+        <div class="body">
+          <div class="fil0">
+            <!--<div class="th"><label for="encabezado1">Encabezado 1:</label>
+                </div>-->
+            <div class="th"><label for="date">Cantidad:</label></div>
+          </div>
+
+          <div class="fil1">
+            <div class="col1"><label for="encabezado1">Publicaciones:</label></div>
+            <div class="col2"><input type="text" name="fila1col2"></div>          
+          </div>
+
+          <div class="fil2">
+            <div class="col1"><label for="encabezado1">V&iacute;deos:</label></div>
+            <div class="col2"><input type="text" name="fila2col2"></div>
+          </div>
+
+          <div class="fil3">
+            <div class="col1"><label for="encabezado1">Horas:</label></div>
+            <div class="col2"><input type="text" label="Horas" name="fila3col2"></div>
+          </div>
+
+          <div class="fil4">
+            <div class="col1"><label for="encabezado1">Revisitas:</label></div>
+            <div class="col2"><input type="text" name="fila4col2"></div>
+          </div>
+
+          <div class="fil5">
+            <div class="col1"><label for="encabezado1">Cursos B&iacute;blicos:</label></div>
+            <div class="col2"><input type="text" name="fila5col2"></div>
+          </div> 
+        </div> 
+      </div> 
+      <br><br> 
+
+      <label for="comments">Comentarios:</label><br>  
+        <textarea id="comments" name="comments"></textarea> 
+      <input type="submit" value="Enviar"> 
+    </form> 
+    
+  </body>
+</html>
