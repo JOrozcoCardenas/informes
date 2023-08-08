@@ -139,9 +139,16 @@
           document.getElementById('content').innerText = 'No values found.';
           return;
         }
+
+        //tambien puede escoger las columnas:
+        //const output = range.values.reduce(
+       //    (str, row) => `${str}${row[0]}, ${row[0]}\n`,
+       //     'Publicadores, Bautizados:\n');                
+       // document.getElementById('content').innerText = output;
+      //}
         const output = range.values.reduce(
-            (str, row) => `${str}${row[0]}, ${row[2]}\n`,
-            'Publicadores, Bautizados:\n');
+            (str, row) => `${str}${row[0]}\n`,
+            'Publicadores:\n');                
         document.getElementById('content').innerText = output;
       }
     </script>
