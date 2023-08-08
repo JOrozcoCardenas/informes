@@ -11,21 +11,21 @@
     <button onclick="fillForm()">Llenar formulario</button>
 
     <script>
-        const GOOGLE_CLIENT_ID = 'TU_CLIENT_ID'; // Reemplaza con tu ID de cliente de Google
+        const GOOGLE_CLIENT_ID = '758435428249-7a7q9l2h56r78ao4t4ulcln1m9np3ub8.apps.googleusercontent.com'; // Reemplaza con tu ID de cliente de Google
         const DISCOVERY_DOC = 'https://sheets.googleapis.com/$discovery/rest?version=v4';
         const SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly';
 
         async function initialize() {
             await gapi.client.init({
-                apiKey: 'TU_API_KEY', // Reemplaza con tu clave de API de Google
+                apiKey: 'AIzaSyCBl2mg8VKEHc1vDB-O0J7T4qXxJZrYEFw', // Reemplaza con tu clave de API de Google
                 discoveryDocs: [DISCOVERY_DOC],
             });
         }
 
         async function listUserNames() {
             const response = await gapi.client.sheets.spreadsheets.values.get({
-                spreadsheetId: 'ID_DE_TU_HOJA', // Reemplaza con el ID de tu hoja
-                range: 'Hoja3!A1:A', // Reemplaza con el rango correcto
+                spreadsheetId: '1JWs9za4xtOHW9vgi-qXAsK66vNI6YSZghfyLgMYgzrg', // Reemplaza con el ID de tu hoja
+                range: 'Pub!A1:A', // Reemplaza con el rango correcto
             });
 
             const range = response.result;
