@@ -17,7 +17,9 @@
 
         <button type="button" id="signout_btn" onclick="signoutGoogle()">Sign
             Out</button>
-       <select id="content"></select> -->
+       <select id="content">
+         <option value="0">selecccione</option>
+       </select> -->
         <!-- <pre id="content"></pre>-->
     </div>
     <script type="text/javascript">
@@ -148,7 +150,8 @@
       //}
         const output = range.values.reduce(
             (str, row) => `${str}${row[0]}\n`,
-            'Publicadores:\n');                
+            'Publicadores:\n'); 
+        
         document.getElementById('content').innerText = output;
       }
     </script>
