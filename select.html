@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets Names Selector</title>
+</head>
+<body>
+    <h1>Seleccione un nombre de usuario:</h1>
+    <select id="userNames"></select>
+    <button onclick="fillForm()">Llenar formulario</button>
+
+    <script>
+        const GOOGLE_CLIENT_ID = 'TU_CLIENT_ID'; // Reemplaza con tu ID de cliente de Google
+        const DISCOVERY_DOC = 'https://sheets.googleapis.com/$discovery/rest?version=v4';
+        const SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly';
+
+        async function initialize() {
+            await gapi.client.init({
+                apiKey: 'TU_API_KEY', // Reemplaza con tu clave de API de Google
+                discoveryDocs: [DISCOVERY_DOC],
+            });
+        }
+
+        async function listUserNames() {
+            const response = await gapi.client.sheets.spreadsheets.values.get({
+                spreadsheetId: 'ID_DE_TU_HOJA', // Reemplaza con el ID de tu hoja
+                range: 'Hoja3!A1:A', // Reemplaza con el rango correcto
+            });
+
+            const range = response.result;
+            const userNames = range.values.flat();
+            const selectElement = document.getElementById('userNames');
+
+            userNames.forEach(name => {
+                const option = document.createElement('option');
+                option.value = name;
+                option.text = name;
+                selectElement.appendChild(option);
+            });
+        }
+
+        async function fillForm() {
+            const selectedUserName = document.getElementById('userNames').value;
+            // Lógica para llenar el formulario con el nombre seleccionado
+            // ...
+        }
+
+        gapi.load('client', async () => {
+            await initialize();
+            await gapi.client.load('sheets', 'v4');
+            await listUserNames();
+        });
+    </script>
+    <script async defer src="https://apis.google.com/js/api.js"></script>
+</body>
+</html>
