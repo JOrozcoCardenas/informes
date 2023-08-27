@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://github.com/JOrozcoCardenas/informes/blob/main/img/info-Servicio150x150.png"/></h1>
+<h1 align="center"><img src="https://github.com/JOrozcoCardenas/informes/blob/main/img/info-Servicio-150x150.png"/></h1>
 
 # _Informes en Servicio de Campo._
 
