@@ -1,5 +1,7 @@
-<h1 align="center"><img src="https://github.com/JOrozcoCardenas/informes/blob/main/img/git_white.png"/></h1>
-# Info-Servicio-Campo
+<h1 align="center"><img src="https://github.com/JOrozcoCardenas/informes/blob/main/img/git_orange.png"/></h1>
+
+# _Informes en Servicio de Campo._
+
 Proyecto básico para recopilar informacion de labores en campo, puntuales para una organización.
 Dentro del proyecto se pretende usar las APIs de Google Sheets y codificar un formulario en Html, Css
 y JavaScript que recogerá la información de labor realizada en campo.
