@@ -1,2 +1,5 @@
 *.key
-*.github
+*.github/ISSUE_TEMPLATE
+*.log
+*.logs
+.vscode
