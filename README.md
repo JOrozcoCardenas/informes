@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://photos.app.goo.gl/uUnuGBBhJ1PLWigj9)"/></h1>
+<h1 align="center"><img src="https://photos.app.goo.gl/uUnuGBBhJ1PLWigj9"/></h1>
 
 # _Informes en Servicio de Campo._
 
