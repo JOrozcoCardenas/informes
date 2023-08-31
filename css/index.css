@@ -1,6 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
+#logo{
+  /* tus estilos aquí */
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
 
 #tabla .body .fil1 .col1,
 #tabla .body .fil2 .col1,
