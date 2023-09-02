@@ -1,205 +1,169 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
-
-#logo{
-  /* tus estilos aquí */
-  display: flex;
-  justify-content:center;
-  width: 15%;
-  padding: 5px;
+html {
+  font-family: NotoSans,Arial,"Arial Unicode MS",sans-serif;
+}
+body{
+  background-color: #f8f8f7;            
+}
+form select, input[type="month"]{
+  line-height: normal;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  border: transparent;
+  outline: none;
+  border-bottom: solid 2px #4a6da7;
+  border-radius: 0;
+  padding: .625rem;
+  vertical-align: middle;
   box-sizing: border-box;
-  border-radius: 2px;
+  transition: all .2s ease-in-out;
+  background-color: rgb(243, 246, 251, 0.5);
+  backdrop-filter: blur(10px);
 }
-#titulo{
-  /* tus estilos aquí */
-  display:flex;
-  justify-content: center;
-  padding: 5px;
-  margin: 15px;
-
-}
-#container{
-  display: flex;
-  justify-content:center;
-}
-
-#tabla .body .fil1 .col1,
-#tabla .body .fil2 .col1,
-#tabla .body .fil3 .col1,
-#tabla .body .fil4 .col1,
-#tabla .body .fil5 .col1 {
-  flex-basis: 50%;
-  text-align: left;
-  padding-right: 5px;
-  box-shadow: inset 0 -1px 0 #ddd;
-}
-
-#tabla .body .fil1 .col2,
-#tabla .body .fil2 .col2,
-#tabla .body .fil3 .col2,
-#tabla .body .fil4 .col2,
-#tabla .body .fil5 .col2 {
-  flex-basis: 50%;
-  text-align: center;
-  box-shadow: inset 0 -1px 0 #ddd;
-}
-      body {
-        font-family: Arial, sans-serif;
-      }
-      form {
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-
-      }
-      label {
-        display: block;
-        margin-bottom: 5px;
-      }
-      input[type="text"],
-      input[type="month"],
-      select,
-      datalist,
-      textarea {
-        width: 100%;
-        padding: 5px;
-        margin-bottom: 10px;
-        box-sizing: border-box;
-        border-radius: 2px;
-        /*border: 1px solid #ccc;*/
-        border: 1px solid rgba(181, 216, 197, 0.5);
-        display: flex;
-      }
-img{
-  justify-content: center;
-}
-
-      #tabla {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      #tabla .body .fil0 .th {
-        text-align: right;
-      }
-
-      #tabla .body .fil1,
-      #tabla .body .fil2,
-      #tabla .body .fil3,
-      #tabla .body .fil4,
-      #tabla .body .fil5 {
-        display: flex;
-      }
-      
-      input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        display: block;
-        margin: 0 auto;
-      }
-      
-      input[type="submit"]:hover {
-        background: var(--m-3-state-layers-light-primary-opacity-008, rgba(103, 80, 164, 0.08));
-        background-color: #5dca62;
-        color: rgb(42, 66, 50);
-      }
-      textarea{
-        width: 355px; 
-        height: 73px
-      }
-
-      /* ///////////////////////////////seccion materialize.io //////////////////////////////////// */
-
-     button{
-      background: var(--m-3-state-layers-light-primary-opacity-008, rgba(103, 80, 164, 0.08));
-      border-radius: 100px;   
-      
-      /* M3/Elevation Light/2 */
-      box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
-
-      /*Layout */
-      display: flex;
-      padding: 10px 24px 10px 16px;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      flex: 1 0 0;
-      align-self: stretch;
-    } 
-      
-    /* ///////////////////////////////////////////CSS DE PRUEBA POR IA para Input /////////////////////////////////*/
-    /* Cambi1ar el alto y el ancho */
-input#nombre-pub {
-  position: relative;
-  height: 50px; /* Cambia la altura según tus preferencias */
-  width: 300px; /* Cambia el ancho según tus preferencias */
-  padding-left: 10%;
-  
-}
-
-/* Estilizar los bordes */
-input#nombre-pub {
-  border: none; /* Remueve los bordes predeterminados */
-  border-bottom: 2px solid #a800ff; /* Borde inferior */
-  border-radius: 2px; /* Bordes redondeados */
-  background-color: rgba(0, 0, 0, 0.1); /* Color de fondo con transparencia */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra en la parte inferior */
-}
-input#nombre-pub:focus {
-  outline: none; /* Elimina el contorno predeterminado del navegador */
-  border-color: #aaa; /* Cambia el color del borde al estar en foco */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Cambia la sombra al estar en foco */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-datalist {
-  display:none;
-}
-
-     /* Ejemplo de uso en tu hoja de estilos CSS */
-    .icon-persona::before {     
-      display: flex; 
-      position: absolute;
-      content: "\e7fd"; /* Código del icono específico */
-      font-family: 'Material Symbols Outlined'; /* Fuente de Google Fonts */
-      font-size: 32px; /* Cambia la altura según tus preferencias */
-      border: none; /* Remueve los bordes predeterminados */
-      font-weight: 300;
-    }
-    .icon-expandmore {
-      content: "\E5CF"; /* Código del icono específico */
-      font-family: 'Material Symbols Outlined'; /* Fuente de Google Fonts */
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    .input-container {
-      position: relative;
-    }
-    .input-icon {
-      position: absolute;
-      top: 5px;
-      right: 5px;
-    }
-    input {
-      padding-right: 25px;
-    }
-
-
-/******* DESCARTADOS ***************/
-
-
-/* Agregar un ícono dentro del input */
-/*input#nombre-pub ::before {
- /* padding-left: 32px; /* Espacio para el ícono */
- /* background-image: url('./calendario.png'); /* URL del ícono */
- /* background-position: 10px center; /* Posición del ícono */
- /* background-repeat: no-repeat;
+/*#name{
+  color: #6e6e6e;
 }*/
+.submitBtn{
+  background-color: #f3f6fb;
+  border: .7px solid #4a6da7;
+  color: #4a6da7;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}        
+.submitBtn:hover {
+  background-color: #dee6f2;
+  color: #4a6da7;
+}        
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f7;            
+}
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  /* Agregar transparencia y efecto de desenfoque */
+  background-color: rgb(243, 246, 251, 0.5);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0px;
+  border-bottom: 1px solid #e4e5e7 ;
+}
+.header img {
+  height: 50px;
+  padding: 5px;
+}
+.header h2 {
+  margin:0px;
+  padding: 10px;
+  font-weight: 400;
+}
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin: 0px;
+  padding: 20px;
+}
+form label {
+  font-weight:400;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+form input[type="text"] {
+  margin: 0;
+  border: transparent;
+  outline: none;
+  border-bottom: solid 1px #4a6da7;
+  border-radius: 0;
+  padding: .5rem;
+  vertical-align: middle;
+  box-sizing: border-box;
+  transition: all .2s ease-in-out; 
+  width:100%;
+}
+form input[type="submit"] {
+  margin-top: 20px;
+}
+.table {
+  /*border: transparent;*/
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+.row0 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.desc {
+  padding: 10px;
+  /*width: 75%;*/
+}
+.cant {
+  padding: 10px; 
+ /* justify-content:left;
+  align-items:normal; */        
+}
+.row1, .row2, .row3, .row4, .row5 {
+  display: flex;
+}
+.row:hover{
+  background-color: #f3f6fb;  
+}
+
+.cell {
+  border: 1px solid rgb(239, 239, 239);
+  padding: 5px;
+}
+
+.cell:first-child {
+  width: 75%;
+}
+.c1 {
+  width: 75%;
+}
+.c2 {
+   width: 20%;   
+}  
+.c2 input {
+  text-align: center;
+}    
+textarea{
+  outline: none;
+  border: solid 1px #d5d4d2;
+  border-radius: 0;
+  padding: .625rem;
+  /*vertical-align: middle;*/
+  width: 100%;
+  box-sizing: border-box;
+  transition: all .2s ease-in-out;
+}
+/* Estilos para el elemento div con la clase "coment" */
+.coment {
+  width: 100%;
+}
+      
+/* Nuevos estilos para colocar los componentes de nombre y fecha uno frente al otro */
+.name-date-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
