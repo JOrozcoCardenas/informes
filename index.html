@@ -23,74 +23,68 @@
           <h2>INFORME DE SERVICIO</h2>
       </div> 
     <form>
-	<div id="container">
-		<img id="logo" src="https://i.imgur.com/J6ZH85d.png"/>
-    <span id="titulo">INFORMES</span>
-	</div>
-      <!-- <span class="icon-persona"></span> -->
-      <label for="nombre-pub">Nombre:</label>
-      <span class="icon-persona"></span><input type="text" name="nombre-pub" id="nombre-pub" list="publicadores" />
-      <datalist id="publicadores">
-        <option>Apple</option>
-        <option>Banana</option>
-        <option>Blackberry</option>
-        <option>Blueberry</option>
-        <option>Lemon</option>
-        <option>Lychee</option>
-        <option>Peach</option>
-        <option>Pear</option>
-	      <option>lista de prueba para select</option> <!-- editado desde nano -->
-      </datalist>
-      <span class="input-icon"></span>
-      <br><br>
-      <label for="date">MES: <input type="month" id="date" name="date"></label>      
-      <br><br>
-
-      <div id="tabla">
-        <div class="body">
-          <div class="fil0">
-            <!--<div class="th"><label for="encabezado1">Encabezado 1:</label>
-                </div>-->
-            <div class="th"><label for="date">Cantidad:</label></div>
-          </div>
-
-          <div class="fil1">
-            <div class="col1"><label for="encabezado1">Publicaciones:</label></div>
-            <div class="col2"><input type="text" name="fila1col2"></div>          
-          </div>
-
-          <div class="fil2">
-            <div class="col1"><label for="encabezado1">V&iacute;deos:</label></div>
-            <div class="col2"><input type="text" name="fila2col2"></div>
-          </div>
-
-          <div class="fil3">
-            <div class="col1"><label for="encabezado1">Horas:</label></div>
-            <div class="col2"><input type="text" label="Horas" name="fila3col2"></div>
-          </div>
-
-          <div class="fil4">
-            <div class="col1"><label for="encabezado1">Revisitas:</label></div>
-            <div class="col2"><input type="text" name="fila4col2"></div>
-          </div>
-
-          <div class="fil5">
-            <div class="col1"><label for="encabezado1">Cursos B&iacute;blicos:</label></div>
-            <div class="col2"><input type="text" name="fila5col2"></div>
-          </div> 
-        </div> 
-      </div> 
-      <br><br> 
-
-      <label for="comments">Comentarios:</label><br>  
-        <textarea id="comments" name="comments"></textarea> 
-        <button id="buttonTitle" title="Enviar"></button> 
-        <style>
-          :root {           
-            background-color: #fff8f6;
-          }
-          </style>       
+	<!-- Nueva estructura para colocar los componentes de nombre y fecha uno frente al otro -->
+  <div class="name-date-container">
+    <div>
+        <label for="name">Nombre:</label><br>
+        <select id="name">
+            <option value="1" selected>Seleccione</option>
+            <option value="2">Opción 2</option>
+            <option value="3">Opción 3</option>
+            <option value="4">Opción 4</option>
+            <option value="5">Opción 5</option>
+        </select>
+    </div>
+    
+    <div>
+        <label for="month">Mes:</label><br>
+        <input type="month" id="month">
+    </div>
+</div>
           
+<!-- Fin de la nueva estructura -->
+<hr>  
+<div class="table">
+  <!-- Encabezadode tabla-->
+    <div class="row0">
+      <div class="desc">
+          <label for="descripcion">Descripción:</label>
+      </div>
+      <div class="cant">
+          <label for="cant">Cant:</label>
+      </div>
+    </div>
+  <!-- Body de tabla-->  
+    <div class="row row1">
+      <div class="cell c1">Publicaciones (impresas y electronicas)</div>
+      <div class="cell c2"><input type="text"></div>
+    </div>
+    <div class="row row2">
+      <div class="cell c1">Presentaciones de vídeos</div>
+      <div class="cell c2"><input type="text"></div>
+    </div>
+    <div class="row row3">
+      <div class="cell c1">Horas</div>
+      <div class="cell c2"><input type="text"></div>
+    </div>
+    <div class="row row4">
+      <div class="cell c1">Revisitas</div>
+      <div class="cell c2"><input type="text"></div>
+    </div>
+    <div class="row row5">
+      <div class="cell cl">Número de diferentes cursos bíblicos dirigidos</div>
+      <div class="cell c2"><input type="text"></div>
+  </div>
+</div> 
+<hr>
+  <!-- COMENTARIOS-->
+  <div class="coment">
+      <label for="comentarios">Comentarios:</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+  </div><br>
+  
+  <!-- Boton Enviar-->
+  <input type="submit" class="submitBtn" value="Enviar">
 
     </form> 
     
