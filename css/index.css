@@ -135,7 +135,7 @@ form input[type="submit"] {
 }
 .cell {
   border: 1px solid rgb(239, 239, 239);
-  padding: 10px;
+  padding: 5px;
   margin: 0;
 }
 
@@ -153,7 +153,7 @@ form input[type="submit"] {
 }    
 textarea{
   outline: none;
-  border: solid 1px #d5d4d2;
+  border: solid 1px #f8f8f7;
   border-radius: 0;
   padding: .625rem;
   /*vertical-align: middle;*/
