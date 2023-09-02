@@ -42,7 +42,7 @@ form select, input[type="month"]{
   color: #4a6da7;
 }        
 .container {
-  margin-top: 50px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,7 +78,7 @@ form {
   align-items: center;
   width: auto;
   margin: 0px;
-  padding: 20px;
+  /*padding: 20px;*/
 }
 form label {
   font-weight:400;
@@ -101,43 +101,51 @@ form input[type="submit"] {
   margin-top: 20px;
 }
 .table {
-  /*border: transparent;*/
+  border-collapse: collapse;
+  border-spacing: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 20px;
 }
 .row0 {
+  background-color: #f8f8f7;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}
-.desc {
-  padding: 10px;
-  /*width: 75%;*/
-}
-.cant {
-  padding: 10px; 
- /* justify-content:left;
-  align-items:normal; */        
 }
 .row1, .row2, .row3, .row4, .row5 {
   display: flex;
+  border: 2px solid #f8f8f7;
+  margin: 0;
+  padding: 0;
 }
 .row:hover{
-  background-color: #f3f6fb;  
+  background-color: rgb(242, 242, 242, 0.5);
+  backdrop-filter: blur(10px);  
 }
+.desc {
+  padding: 10px;
+  width: 80%;
+}
+.cant {
+  padding: 10px; 
+  width: 20%;       
+  text-align: center;
+}
+
 
 .cell {
   border: 1px solid rgb(239, 239, 239);
-  padding: 5px;
+  padding: 10px;
+  margin: 0;
 }
 
 .cell:first-child {
-  width: 75%;
+  width: 80%;
 }
 .c1 {
-  width: 75%;
+  width: 80%;
 }
 .c2 {
    width: 20%;   
@@ -164,6 +172,6 @@ textarea{
 .name-date-container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 97%;
 }
 
