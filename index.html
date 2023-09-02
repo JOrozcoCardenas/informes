@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link  type="text/javascript" href="./js/monthDefault.js">
     
-<!-- Aqui va el titulo - prueba de cambios en local -->
+
     <title> Informe de Servicio</title>
     <script src="https://apis.google.com/js/api.js"></script>
     
@@ -22,71 +22,69 @@
           <img src="https://i.imgur.com/J6ZH85d.png" alt="Logo">
           <h2>INFORME DE SERVICIO</h2>
       </div> 
-    <form>
-	<!-- Nueva estructura para colocar los componentes de nombre y fecha uno frente al otro -->
-  <div class="name-date-container">
-    <div>
-        <label for="name">Nombre:</label><br>
-        <select id="name">
-            <option value="1" selected>Seleccione</option>
-            <option value="2">Opción 2</option>
-            <option value="3">Opción 3</option>
-            <option value="4">Opción 4</option>
-            <option value="5">Opción 5</option>
-        </select>
+      <form>
+        <!-- Nueva estructura para colocar los componentes de nombre y fecha uno frente al otro -->
+          <div class="name-date-container">
+            <div>
+              <label for="name">Nombre:</label><br>
+              <select id="name">
+                <option value="1" selected>Seleccione</option>
+                <option value="2">Opción 2</option>
+                <option value="3">Opción 3</option>
+                <option value="4">Opción 4</option>
+                <option value="5">Opción 5</option>
+              </select>
+            </div>    
+            <div>
+              <label for="month">Mes:</label><br>
+              <input type="month" id="month">
+            </div>
+          </div>
+        <!-- Fin de la nueva estructura -->
+        <hr>  
+        <!-- LA TABLA-->
+          <div class="table">
+        <!-- ENCABEZADO DE LA TABLA-->
+            <div class="row0">
+              <div class="desc">
+                <label for="descripcion">Descripción:</label>
+              </div>
+              <div class="cant">
+                <label for="cant">Cant:</label>
+              </div>
+            </div>
+          <!-- CUERPO DE LA TABLA-->  
+            <div class="row row1">
+              <div class="cell c1">Publicaciones (impresas y electronicas)</div>
+              <div class="cell c2"><input type="text"></div>
+            </div>
+            <div class="row row2">
+              <div class="cell c1">Presentaciones de vídeos</div>
+              <div class="cell c2"><input type="text"></div>
+            </div>
+            <div class="row row3">
+              <div class="cell c1">Horas</div>
+              <div class="cell c2"><input type="text"></div>
+            </div>
+            <div class="row row4">
+              <div class="cell c1">Revisitas</div>
+              <div class="cell c2"><input type="text"></div>
+            </div>
+            <div class="row row5">
+              <div class="cell cl">Número de diferentes cursos bíblicos dirigidos</div>
+              <div class="cell c2"><input type="text"></div>
+            </div>
+          </div> 
+        <hr>
+        <!-- COMENTARIOS-->
+        <div class="coment">
+          <label for="comentarios">Comentarios:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </div>
+        <hr>  
+        <!-- BOTON ENVIAR-->
+        <input type="submit" class="submitBtn" value="Enviar">
+      </form> 
     </div>
-    
-    <div>
-        <label for="month">Mes:</label><br>
-        <input type="month" id="month">
-    </div>
-</div>
-          
-<!-- Fin de la nueva estructura -->
-<hr>  
-<div class="table">
-  <!-- Encabezadode tabla-->
-    <div class="row0">
-      <div class="desc">
-          <label for="descripcion">Descripción:</label>
-      </div>
-      <div class="cant">
-          <label for="cant">Cant:</label>
-      </div>
-    </div>
-  <!-- Body de tabla-->  
-    <div class="row row1">
-      <div class="cell c1">Publicaciones (impresas y electronicas)</div>
-      <div class="cell c2"><input type="text"></div>
-    </div>
-    <div class="row row2">
-      <div class="cell c1">Presentaciones de vídeos</div>
-      <div class="cell c2"><input type="text"></div>
-    </div>
-    <div class="row row3">
-      <div class="cell c1">Horas</div>
-      <div class="cell c2"><input type="text"></div>
-    </div>
-    <div class="row row4">
-      <div class="cell c1">Revisitas</div>
-      <div class="cell c2"><input type="text"></div>
-    </div>
-    <div class="row row5">
-      <div class="cell cl">Número de diferentes cursos bíblicos dirigidos</div>
-      <div class="cell c2"><input type="text"></div>
-  </div>
-</div> 
-<hr>
-  <!-- COMENTARIOS-->
-  <div class="coment">
-      <label for="comentarios">Comentarios:</label><br>
-      <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
-  </div><br>
-  
-  <!-- Boton Enviar-->
-  <input type="submit" class="submitBtn" value="Enviar">
-
-    </form> 
-    
   </body>
 </html>
