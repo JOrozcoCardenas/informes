@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link  type="text/javascript" href="./js/monthDefault.js">
-    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    
 <!-- Aqui va el titulo - prueba de cambios en local -->
     <title> Informe de Servicio</title>
     <script src="https://apis.google.com/js/api.js"></script>
@@ -15,10 +15,13 @@
           updateSelect();
       });
     </script>   
-     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>     
-<!-- hago este comentario para hacer un seguimiento a sgte comando: git log --graph --oneline --all --decorate-->    
-  </head>
+  <head>
   <body onload="setMonthToCurrent()">
+    <div class="container">
+      <div class="header">
+          <img src="https://i.imgur.com/J6ZH85d.png" alt="Logo">
+          <h2>INFORME DE SERVICIO</h2>
+      </div> 
     <form>
 	<div id="container">
 		<img id="logo" src="https://i.imgur.com/J6ZH85d.png"/>
