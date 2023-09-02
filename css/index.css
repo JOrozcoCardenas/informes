@@ -60,6 +60,7 @@ form label {
   transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1),color 150ms cubic-bezier(0.4, 0, 0.2, 1), top 500ms;
 }
 form input[list] {
+  width: 75%;
   line-height: normal;
   color:inherit ;
   font: inherit;
@@ -76,6 +77,7 @@ form input[list] {
   backdrop-filter: blur(10px);
 }    
 form input[type="month"], input[list] {
+  width: 90%;
   line-height: normal;
   color:#6e6e6e9e ;
   font: inherit;
