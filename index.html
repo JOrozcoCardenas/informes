@@ -72,5 +72,68 @@
         </div>
       </form> 
     </div>
+     <script>
+    var facetas = {};  // Para almacenar la faceta de cada nombre
+
+    function populateDropdown(names) {
+      var select = document.getElementById('name');
+      select.innerHTML = '';
+      names.forEach(function(name) {
+        var option = document.createElement('option');
+        option.value = name;
+        option.text = name;
+        select.appendChild(option);
+      });
+      checkFaceta();
+    }
+
+    function checkFaceta() {
+      var name = document.getElementById('name').value;
+      if (facetas[name] === 'PUB') {
+        document.getElementById('horasContainer').classList.add('hidden');
+        document.getElementById('creditoContainer').classList.add('hidden');
+        } else {
+        document.getElementById('horasContainer').classList.remove('hidden');  
+        document.getElementById('creditoContainer').classList.remove('hidden');  
+        document.getElementById('estudiosContainer').classList.remove('hidden');
+        document.getElementById('comentariosContainer').classList.remove('hidden');
+      }
+    }
+
+    function submitData() {
+      var name = document.getElementById('name').value;
+      var estudios = document.getElementById('estudios').value;
+      var horas = document.getElementById('horas').value;
+      var credito = document.getElementById('credito').value;
+      var comentarios = document.getElementById('comentarios').value;
+
+      if (name === '') {
+        alert('Por favor, Ingresa o elige tu nombre.');
+        return;
+      }
+
+      google.script.run.submitForm({
+        name: name,
+        estudios: estudios,
+        horas: horas,
+        credito:credito,
+        comentarios: comentarios
+      });
+
+      google.script.host.close();
+    }
+
+    function getFacetas(names) {
+      names.forEach(function(name) {
+        facetas[name.name] = name.faceta;  // Asumimos que 'name' tiene propiedades 'name' y 'faceta'
+      });
+    }
+
+    google.script.run.withSuccessHandler(function(response) {
+      populateDropdown(response.names);
+      getFacetas(response.facetas);
+    }).getNombre();
+  </script>
+
   </body>
 </html>
