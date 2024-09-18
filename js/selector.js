@@ -1,6 +1,6 @@
 function updateSelect() {
     // ID del archivo de Google Sheets
-    var spreadsheetId = '1JWs9za4xtOHW9vgi-qXAsK66vNI6YSZghfyLgMYgzrg';
+    var spreadsheetId = '1WKtWrJWxdMnsdM0tnq7P3hycb19Oj5HZUCz_yoBNRLc';
     
 
     // Rango que contiene los nombres (ej. columna A)
@@ -8,7 +8,7 @@ function updateSelect() {
 
     // Autenticación con la API de Google
     gapi.client.init({
-        'apiKey': 'AIzaSyCBl2mg8VKEHc1vDB-O0J7T4qXxJZrYEFw',
+        'apiKey': 'AIzaSyCHT3-812aHRyUkuotPk2vgurfubm6vmF4',
         'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     }).then(function() {
         // Consulta a la API para obtener los datos del rango especificado
